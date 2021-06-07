@@ -14,7 +14,7 @@ export default function Index({ allPosts, preview }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Kido UI | Docs</title>
         </Head>
         <Container>
           <Intro />
@@ -28,7 +28,7 @@ export default function Index({ allPosts, preview }) {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
         </Container>
       </Layout>
     </>
