@@ -1,5 +1,5 @@
-import Avatar from '../components/avatar'
-import Date from '../components/date'
+import Avatar from './templates/avatar'
+import Date from './templates/date'
 import CoverImage from '../components/cover-image'
 import Link from 'next/link'
 
