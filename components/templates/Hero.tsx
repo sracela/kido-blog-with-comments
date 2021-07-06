@@ -12,13 +12,13 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
+          <Link href="https://github.com/kido-dynamics-sa/kido-ui">
             <a>GitHub</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
-            <a>Sign in</a>
+          <Link href="/docs">
+            <a>Docs</a>
           </Link>
         </li>
       </NavbarTwoColumns>
@@ -28,15 +28,16 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developer</span>
+            {'A modern digital platform specialized in \n'}
+            <span className="text-primary-500">Tourism</span>, <span className="text-secondary-500">Mobility</span> and
+            <span className="text-terciary-500"> Retail</span> data
           </>
         }
-        description="The easiest way to build React landing page in seconds."
+        description="This project is based on NextJS as React framework, Theme-UI to handle the styles and NX as monorepo manager."
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
+          <Link href="https://es.app.kidodynamics.com/">
             <a>
-              <Button xl>Download Your Free Theme</Button>
+              <Button xl>Test the platform</Button>
             </a>
           </Link>
         }

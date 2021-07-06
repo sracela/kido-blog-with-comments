@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
-  button: ReactNode;
+  button?: ReactNode;
 };
 
 const HeroOneButton = (props: IHeroOneButtonProps) => (
@@ -12,8 +12,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       {props.title}
     </h1>
     <div className="text-2xl mt-4 mb-16">{props.description}</div>
-
-    {props.button}
+      {props.button || ""}
   </header>
 );
 
