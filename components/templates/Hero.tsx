@@ -78,15 +78,15 @@ const Hero = () => {
                     return typewriter
                       .callFunction(() => setActive(1))
                       .typeString("Barcelona")
-                      .pauseFor(5000)
+                      .pauseFor(3000)
                       .deleteAll()
                       .callFunction(() => setActive(2))
                       .typeString("Cádiz")
-                      .pauseFor(5000)
+                      .pauseFor(3000)
                       .deleteAll()
                       .callFunction(() => setActive(3))
                       .typeString("Sarria")
-                      .pauseFor(5000)
+                      .pauseFor(3000)
                       .start();
                   }}
                 />
