@@ -1,5 +1,10 @@
 module.exports = {
   theme: {
+    fontFamily: {
+      'sans': 'Montserrat, Open Sans, Arial, Helvetica, sans-serif',
+      'serif': 'Montserrat, Open Sans, Arial, Helvetica, sans-serif',
+      'mono': 'Montserrat, monospace'
+    },
     fontSize: {
       xs: "0.75rem",
       sm: "0.875rem",

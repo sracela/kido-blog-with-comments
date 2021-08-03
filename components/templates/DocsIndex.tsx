@@ -38,7 +38,8 @@ const DocsIndex = () => (
         }
         description="This project is based on NextJS as React framework, Theme-UI to handle the styles and NX as monorepo manager."
       />
-    </Section>
+        </Section>
+        
       </main>
     </div>
     <Banner />

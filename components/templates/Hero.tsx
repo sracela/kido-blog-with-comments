@@ -1,24 +1,24 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { Background } from '../background/Background';
-import { Button } from '../button/Button';
-import { HeroOneButton } from '../hero/HeroOneButton';
-import { Section } from '../layout/Section';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Logo } from './Logo';
+import { Background } from "../background/Background";
+import { Button } from "../button/Button";
+import { HeroOneButton } from "../hero/HeroOneButton";
+import { Section } from "../layout/Section";
+import { NavbarTwoColumns } from "../navigation/NavbarTwoColumns";
+import { Logo } from "./Logo";
 
 const Hero = () => (
   <Background color="bg-gray-100">
-    <Section yPadding="py-6">
+    <Section yPadding="py-5">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://github.com/kido-dynamics-sa/kido-ui">
-            <a>GitHub</a>
+          <Link href="#">
+            <a>Contact Sales</a>
           </Link>
         </li>
         <li>
-          <Link href="/docs">
-            <a>Docs</a>
+          <Link href="#">
+            <a>Select Country</a>
           </Link>
         </li>
       </NavbarTwoColumns>
@@ -26,14 +26,20 @@ const Hero = () => (
 
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
-        title={
-          <>
-            {'A modern digital platform specialized in \n'}
-            <span className="text-primary-500">Tourism</span>, <span className="text-secondary-500">Mobility</span> and
-            <span className="text-terciary-500"> Retail</span> data
-          </>
+        // title={
+        //   <>
+        //     {'A modern digital platform specialized in \n'}
+        //     <span className="text-primary-500">Tourism</span>, <span className="text-secondary-500">Mobility</span> and
+        //     <span className="text-terciary-500"> Retail</span> data
+        //   </>
+        // }
+        title="¿Qué hacemos?"
+        description={
+          <ul>
+            <li>Turismo: cuánta gente hubo en Mayo en Barcelona?</li>
+            <li>Mobility: cuánta gente viajó ayer entre Madrid y Sevilla</li>
+          </ul>
         }
-        description="This project is based on NextJS as React framework, Theme-UI to handle the styles and NX as monorepo manager."
         button={
           <Link href="https://es.app.kidodynamics.com/">
             <a>
