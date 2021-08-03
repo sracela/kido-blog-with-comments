@@ -14,10 +14,11 @@ import { useState } from "react";
 
 const Hero = () => {
   const verticalFeatureClass = className(
-    "mt-8",
+    // "mt-10",
+    "p-3",
     "flex",
     "flex-wrap",
-    "items-center"
+    // "items-center"
   );
 
   const router = useRouter();
@@ -25,7 +26,7 @@ const Hero = () => {
 
   return (
     <Background color="bg-gray-100">
-      <Section yPadding="py-5">
+      <Section yPadding="pt-8">
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
             <Link href="#">
@@ -40,33 +41,10 @@ const Hero = () => {
         </NavbarTwoColumns>
       </Section>
 
-      <Section yPadding="pt-20 pb-32">
-        {/* <HeroOneButton
-        // title={
-        //   <>
-        //     {'A modern digital platform specialized in \n'}
-        //     <span className="text-primary-500">Tourism</span>, <span className="text-secondary-500">Mobility</span> and
-        //     <span className="text-terciary-500"> Retail</span> data
-        //   </>
-        // }
-        title="Unveil powerful insights to take smarter decisions"
-        description={
-          <ul>
-            <li>Turismo: cuánta gente hubo en Mayo en Barcelona?</li>
-            <li>Mobility: cuánta gente viajó ayer entre Madrid y Sevilla</li>
-          </ul>
-        }
-        button={
-          <Link href="https://es.app.kidodynamics.com/">
-            <a>
-              <Button xl>Test the platform</Button>
-            </a>
-          </Link>
-        }
-      /> */}
+      <Section yPadding="pt-12 pb-8">
 
         <div className={verticalFeatureClass}>
-          <div className="w-full sm:w-1/2 text-left sm:px-5">
+          <div className="w-full md:w-1/2 text-left sm:px-5">
             <h1 className="text-6xl text-gray-800 font-bold">
               Unveil Powerful Insights of
               <span className="text-primary-500">
@@ -96,6 +74,20 @@ const Hero = () => {
             Are you ready to make smarter decisions?
             </h3>
 
+        <div className="text-center pt-2 mt-12 flex gap-8 xs:justify-center">
+          <Link href="https://es.app.kidodynamics.com/tourism">
+            <a>
+              <Button xl>See more stats</Button>
+            </a>
+          </Link>
+
+          <Link href="https://es.app.kidodynamics.com/">
+            <a>
+              <Button xl inverse>Contact us</Button>
+            </a>
+          </Link>
+        </div>
+
             {/* <h3 className="mt-12 text-2xl font-semibold">
               <i>¿Ha afectado la pandemia a mi ciudad el último mes?</i>
             </h3>
@@ -106,25 +98,22 @@ const Hero = () => {
             </div> */}
           </div>
 
-          <div className="w-full sm:w-1/2 p-3 flex flex-col">
+          <div className="w-full md:w-1/2 p-0 flex flex-col mt-20">
             {active === 1 ? (<img
               src={`${router.basePath}/assets/images/first.png`}
-              alt="Second feature alt text"
+              alt="First feature alt text"
             />) : active === 2 ? (<img
               src={`${router.basePath}/assets/images/second.png`}
               alt="Second feature alt text"
             />) : (<img
               src={`${router.basePath}/assets/images/third.png`}
-              alt="Second feature alt text"
+              alt="Third feature alt text"
             />)}
+            <div className="text-right text-sm mr-8 my-0 p-0">
+              Período: De 01-05-2021 a 31-05-2021.<br></br>
+              {/* Datos para <i>{active === 1 ? "Barcelona" : active === 2 ? "Cádiz" : "Sarria"}</i>. */}
+            </div>
           </div>
-        </div>
-        <div className="text-center pt-10">
-          <Link href="https://es.app.kidodynamics.com/">
-            <a>
-              <Button xl>See more stats</Button>
-            </a>
-          </Link>
         </div>
       </Section>
     </Background>
