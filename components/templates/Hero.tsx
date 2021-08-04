@@ -90,12 +90,10 @@ const Hero = () => {
 
           <div className="w-full md:w-1/2 p-0 flex justify-center">
             {active === 1 ? (
-              <div sx={{position: 'relative'}}>
                 <img
                   src={`${router.basePath}/assets/images/superpos.png`}
                   alt="First feature alt text"
                 />
-              </div>
             ) : active === 2 ? (
               <img
                 src={`${router.basePath}/assets/images/superpos2.png`}
