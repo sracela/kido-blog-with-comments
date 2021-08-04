@@ -26,11 +26,32 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-base {
-            @apply text-lg font-semibold py-2 px-4;
+            @apply font-semibold py-2 px-4;
           }
 
           .btn-xl {
-            @apply font-extrabold text-lg py-3 px-5;
+            @apply font-extrabold text-xl py-4 px-20;
+            position: relative;   
+            z-index: 3; 
+            color: white;      
+          }
+
+          .btn-xl:before {
+            content: "";
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            height: 50px;
+            width: 90%;
+            background: rgba(237,46,126,0.5);
+            -webkit-filter: blur(40px);
+            filter: blur(30px);
+            border-radius: 2px;
+            z-index: -1;
+            opacity: 0.85;
+          }
+          .btn-xl:hover:before {
+            opacity: 1;
           }
 
           .btn-primary {
@@ -41,7 +62,8 @@ const Button = (props: IButtonProps) => {
             @apply bg-primary-600;
           }
           .btn-inverse {
-            @apply bg-gray-100 text-primary-500 border-2 border-primary-500;
+            @apply text-primary-500 border-2 border-primary-500;
+            background: white;
           }
 
           .btn-inverse:hover {
