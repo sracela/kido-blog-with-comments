@@ -30,7 +30,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-xl {
-            @apply font-extrabold text-xl py-4 px-20;
+            @apply font-extrabold text-lg py-3 px-20;
             position: relative;   
             z-index: 3; 
             color: white;      
