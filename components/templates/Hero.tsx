@@ -35,13 +35,19 @@ const Hero = () => {
               </a>
             </Link>
           </li>
+          <li>
+            <Link href="https://es.app.kidodynamics.com/">
+              <a>
+                <Button>GET STARTED</Button>
+              </a>
+            </Link>
+          </li>
         </NavbarTwoColumns>
       </Section>
-
       <Section yPadding="pt-12 pb-6 px-12">
         <div className={verticalFeatureClass}>
           <div className="w-full md:w-1/2 text-left sm:px-5 px-12 py-12">
-            <h1 className="text-6xl text-gray-800 font-extrabold leading-tight">
+            <h1 className="lg:text-6xl text-4xl text-gray-800 font-extrabold leading-tight">
               Unveil Powerful Insights of
               <span className="text-primary-500">
                 <Typewriter
@@ -66,7 +72,7 @@ const Hero = () => {
                 />
               </span>
             </h1>
-            <h3 className="mt-8 text-2xl">
+            <h3 className="mt-8 text-lg lg:text-2xl">
               Understanding people's mobility to boost your business.
             </h3>
 
@@ -112,29 +118,6 @@ const Hero = () => {
               We operate worldwide! Check out the other countries{" "}
               <strong>here</strong>.{" "}
             </span>
-            {/* <div className="z-40 relative flex justify-center items-center"> */}
-            {/* <img
-                  src={`${router.basePath}/assets/images/first.png`}
-                  alt="First feature alt text"
-                /> */}
-            {/* </div> */}
-            {/* <div className="z-30 relative flex -left-72 -top-12 items-center justify-center">
-                <img
-                  src={`${router.basePath}/assets/images/first.png`}
-                  alt="First feature alt text"
-                />
-              </div> */}
-            {/* <div className="z-0 relative flex left-12 top-4 w-200">
-                <img
-                  src={`${router.basePath}/assets/images/behind2.png`}
-                  alt="First feature alt text"
-                />
-              </div> */}
-            {/* <div>
-              <img
-                src={`${router.basePath}/assets/images/party2.png`}
-                alt="First feature alt text"
-              /></div> */}
           </div>
         </div>
       </Section>

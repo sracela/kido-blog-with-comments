@@ -12,6 +12,7 @@ import { useRouter } from "next/router";
 import { Partners } from "../partners/Partners";
 import { Section } from "../layout/Section";
 import { WhyPage } from "../why-page/WhyPage";
+import { VerticalFeatureRow } from "../feature/VerticalFeatureRow";
 
 const Base = () => {
   const router = useRouter();
@@ -22,27 +23,9 @@ const Base = () => {
       <Partners />
       <hr />
       <WhyPage />
-      <Section yPadding="pt-20 pb-32">
-        <HeroOneButton
-          title="¿Qué más cosas hacemos?"
-          description={
-            <ul>
-              <li>COVID</li>
-              <li>Enlace a Blog / Papers</li>
-            </ul>
-          }
-          button={
-            <Link href="https://es.app.kidodynamics.com/">
-              <a>
-                <Button xl>Test the platform</Button>
-              </a>
-            </Link>
-          }
-        />
-      </Section>
 
-      {/* <VerticalFeatures />
-    <Banner /> */}
+      <VerticalFeatures />
+      <Banner />
       <Footer />
     </div>
   );

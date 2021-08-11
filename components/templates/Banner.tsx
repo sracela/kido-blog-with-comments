@@ -12,7 +12,7 @@ const Banner = () => (
       button={
         <Link href="https://es.app.kidodynamics.com/">
           <a>
-            <Button>Get Started</Button>
+            <Button>Request a Demo</Button>
           </a>
         </Link>
       }

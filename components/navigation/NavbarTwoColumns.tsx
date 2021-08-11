@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 type INavbarProps = {
   logo: ReactNode;
@@ -15,7 +15,7 @@ const NavbarTwoColumns = (props: INavbarProps) => (
       </Link>
     </div>
 
-    <nav>
+    <nav className="lg:p-0 p-6">
       <ul className="navbar flex items-center font-medium text-gray-800">
         {props.children}
       </ul>

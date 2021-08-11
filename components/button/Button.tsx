@@ -1,4 +1,4 @@
-import className from 'classnames';
+import className from "classnames";
 
 type IButtonProps = {
   xl?: boolean;
@@ -9,10 +9,10 @@ type IButtonProps = {
 const Button = (props: IButtonProps) => {
   const btnClass = className({
     btn: true,
-    'btn-xl': props.xl,
-    'btn-base': !props.xl,
-    'btn-primary': !props.inverse,
-    'btn-inverse': props.inverse,
+    "btn-xl": props.xl,
+    "btn-base": !props.xl,
+    "btn-primary": !props.inverse,
+    "btn-inverse": props.inverse,
   });
 
   return (
@@ -30,10 +30,10 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-xl {
-            @apply font-extrabold text-lg py-3 px-20;
-            position: relative;   
-            z-index: 3; 
-            color: white;      
+            @apply font-extrabold text-lg py-3 lg:px-20 px-6;
+            position: relative;
+            z-index: 3;
+            color: white;
           }
 
           .btn-xl:before {
@@ -43,7 +43,7 @@ const Button = (props: IButtonProps) => {
             top: 60%;
             height: 50px;
             width: 90%;
-            background: rgba(237,46,126,0.5);
+            background: rgba(237, 46, 126, 0.5);
             -webkit-filter: blur(40px);
             filter: blur(30px);
             border-radius: 2px;

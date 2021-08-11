@@ -30,7 +30,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       </div>
 
       <div className="w-full sm:w-1/2 p-6">
-        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
+        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} className="object-contain  mx-auto" style={{maxWidth: '350px'}} />
       </div>
     </div>
   );
