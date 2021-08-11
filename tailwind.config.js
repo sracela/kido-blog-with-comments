@@ -20,6 +20,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        backgroundColor: {
+          secondary: "#1D1D37"
+        },
         primary: {
           100: "#f8bbd0",
           200: "#f48fb1",
@@ -65,6 +68,18 @@ module.exports = {
           900: "#1a202c",
         },
       },
+      minWidth: {
+        'logo': '128px',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        'full': '100%',
+       },
+       maxWidth: {
+         '1/4': '20%',
+         '1/2': '50%',
+         '3/4': '75%',
+        },
       lineHeight: {
         hero: "4.5rem",
       },

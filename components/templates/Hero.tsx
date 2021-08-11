@@ -38,7 +38,7 @@ const Hero = () => {
         </NavbarTwoColumns>
       </Section>
 
-      <Section yPadding="pt-12 pb-20 px-12">
+      <Section yPadding="pt-12 pb-6 px-12">
         <div className={verticalFeatureClass}>
           <div className="w-full md:w-1/2 text-left sm:px-5 px-12 py-12">
             <h1 className="text-6xl text-gray-800 font-extrabold leading-tight">
