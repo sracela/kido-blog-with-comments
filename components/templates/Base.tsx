@@ -11,7 +11,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Partners } from "../partners/Partners";
 import { Section } from "../layout/Section";
-import { WhyPage } from "../why-page/WhyPage";
+import { WhyPage } from "../whypage/WhyPage";
 import { VerticalFeatureRow } from "../feature/VerticalFeatureRow";
 
 const Base = () => {
