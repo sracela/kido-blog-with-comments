@@ -1,6 +1,6 @@
-import Avatar from '../components/avatar'
-import Date from '../components/date'
-import CoverImage from '../components/cover-image'
+import Avatar from './avatar'
+import Date from './date'
+import CoverImage from './cover-image'
 import PostTitle from './post-title'
 import {imageBuilder} from '../../lib/sanity'
 export default function PostHeader({ title, coverImage, date, author }) {

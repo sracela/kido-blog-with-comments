@@ -9,7 +9,8 @@ type ISectionProps = {
 
 const Section = (props: ISectionProps) => (
   <div
-    className={`max-w-screen-xl mx-auto px-3 ${
+    className={`
+    text-gray-600 max-w-screen-xl mx-auto px-3 ${
       props.yPadding ? props.yPadding : 'py-16'
     }`}
   >

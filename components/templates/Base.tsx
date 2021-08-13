@@ -4,20 +4,13 @@ import { Banner } from "./Banner";
 import { Footer } from "./Footer";
 import { Hero } from "./Hero";
 import { VerticalFeatures } from "./VerticalFeatures";
-import { Background } from "../background/Background";
-import { HeroOneButton } from "../hero/HeroOneButton";
-import { Button } from "../button/Button";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import { Partners } from "../partners/Partners";
-import { Section } from "../layout/Section";
 import { WhyPage } from "../whypage/WhyPage";
-import { VerticalFeatureRow } from "../feature/VerticalFeatureRow";
+import Layout from "../post/layout";
 
 const Base = () => {
-  const router = useRouter();
   return (
-    <div className="antialiased text-gray-600">
+    <Layout>
       <Meta title={AppConfig.title} description={AppConfig.description} />
       <Hero />
       <Partners />
@@ -26,9 +19,8 @@ const Base = () => {
 
       <VerticalFeatures />
       <Banner />
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 
-export { Base };
+export default Base;

@@ -77,12 +77,12 @@ const Footer = () => (
         </li>
         <li>
           <Link href="/">
-            <a>About</a>
+            <a>Docs</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
-            <a>Docs</a>
+          <Link href="/blog">
+            <a>Blog</a>
           </Link>
         </li>
         <li>
