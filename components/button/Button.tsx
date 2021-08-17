@@ -67,7 +67,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-inverse:hover {
-            @apply bg-gray-200;
+            @apply text-white bg-primary-500;
           }
         `}
       </style>

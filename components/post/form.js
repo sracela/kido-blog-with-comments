@@ -42,6 +42,8 @@ export default function Form ({_id}) {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-lg" disabled>
+      
+      <h2 className="mt-10 mb-4 text-2xl lg:text-2xl leading-tight text-gray-900">Add a comment: </h2>
       <input {...register("_id")} type="hidden" name="_id" value={_id} />
       <label className="block mb-5">
         <span className="text-gray-700">Name</span>

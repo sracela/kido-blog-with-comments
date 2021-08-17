@@ -4,7 +4,6 @@ import HeroPost from "../heropost/hero-post";
 import { AppConfig } from "../../utils/AppConfig";
 import MoreStories from "../../components/post/more-stories";
 import Layout from '../../components/post/layout'
-import Header from '../../components/post/header'
 
 export default function Blog({ allPosts, preview }) {
   if (allPosts) {
@@ -12,8 +11,6 @@ export default function Blog({ allPosts, preview }) {
     const morePosts = allPosts.slice(1);
     return (
       <Layout>
-      <Header />
-        <div className="container mx-auto px-5">
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -25,7 +22,6 @@ export default function Blog({ allPosts, preview }) {
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </div>
       </Layout>
     );
   }
