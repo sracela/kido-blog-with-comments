@@ -17,7 +17,8 @@ const VerticalFeatures = ({ posts }) => (
         slug={post.slug}
         reverse={index % 2 === 0}
       />
-    ))}
+    )
+    )}
   </Section>
 
   //   <VerticalFeatureRow
