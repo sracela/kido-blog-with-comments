@@ -42,6 +42,15 @@ export default {
       title: 'Published at',
       type: 'datetime'
     },
+
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+      options: {
+        maxLength: 200
+      }
+    },
     {
       name: 'body',
       title: 'Body',
