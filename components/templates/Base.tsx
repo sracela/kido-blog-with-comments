@@ -5,7 +5,8 @@ import { Partners } from "../partners/Partners";
 import { WhyPage } from "../whypage/WhyPage";
 import Layout from "../post/layout";
 
-const Base = () => {
+const Base = ({ allPosts, preview }) => {
+  const morePosts = allPosts.slice(1);
   return (
     <Layout>
       <Hero />
@@ -13,10 +14,11 @@ const Base = () => {
       <hr />
       <WhyPage />
 
-      <VerticalFeatures />
+      <VerticalFeatures posts={morePosts}/>
       <Banner />
     </Layout>
   );
 };
 
 export default Base;
+
