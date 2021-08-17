@@ -10,7 +10,7 @@ const VerticalFeatures = ({ posts }) => (
       <VerticalFeatureRow
         key={post.slug}
         title={post.title}
-        description={post.body}
+        description={post.description}
         // image="/assets/images/mac.png"
         image={post.coverImage}
         imageAlt={post.slug}
