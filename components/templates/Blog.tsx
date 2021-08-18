@@ -13,7 +13,7 @@ export default function Blog({ allPosts, preview }) {
       <Layout>
           {heroPost && (
             <HeroPost
-              title={heroPost.title}
+              title={heroPost.title[0]}
               coverImage={heroPost.coverImage}
               date={heroPost.date}
               author={heroPost.author}

@@ -9,7 +9,7 @@ const VerticalFeatures = ({ posts }) => (
     {posts.map((post, index) => (
       <VerticalFeatureRow
         key={post.slug}
-        title={post.title}
+        title={post.title[0]}
         description={post.description}
         // image="/assets/images/mac.png"
         image={post.coverImage}

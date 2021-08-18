@@ -31,11 +31,11 @@ export default function Post({ post, morePosts, preview }) {
             <div className="text-gray-900">
               <article>
                 <Head>
-                  <title>{post.title}</title>
+                  <title>{post.title[0]}</title>
                   {/* <meta property="og:image" content={post.ogImage.url} /> */}
                 </Head>
                 <PostHeader
-                  title={post.title}
+                  title={post.title[0]}
                   coverImage={post.coverImage}
                   date={post.date}
                   author={post.author}
