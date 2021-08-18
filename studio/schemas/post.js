@@ -1,3 +1,10 @@
+const supportedLanguages = [
+  { id: 'en', title: 'English', isDefault: true },
+  { id: 'es', title: 'Español' },
+]
+
+const baseLanguage = supportedLanguages.find(l => l.isDefault)
+
 export default {
   name: 'post',
   title: 'Post',
@@ -6,7 +13,7 @@ export default {
     {
       name: 'title',
       title: 'Title',
-      type: 'string'
+      type: 'localeString',
     },
     {
       name: 'slug',
@@ -60,7 +67,7 @@ export default {
 
   preview: {
     select: {
-      title: 'title',
+      title: `title.${baseLanguage.id}`,
       author: 'author.name',
       media: 'mainImage'
     },
