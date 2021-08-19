@@ -7,7 +7,7 @@ import MoreStories from "../components/post/more-stories";
 import Layout from '../components/post/layout'
 import { useTranslation } from "react-i18next";
 
-function Blog({ allPosts, preview, lang }) {
+function Blog({ allPosts, preview }) {
   const { t, i18n } = useTranslation('common');
 
 
