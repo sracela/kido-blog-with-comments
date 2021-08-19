@@ -1,7 +1,7 @@
 import { VerticalFeatureRow } from "../feature/VerticalFeatureRow";
 import { Section } from "../layout/Section";
 
-const VerticalFeatures = ({ posts }) => (
+const VerticalFeatures = ({ posts, lang }) => (
   <Section
     title="Smarter Decisions Making Starts With KIDO"
     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
@@ -9,7 +9,7 @@ const VerticalFeatures = ({ posts }) => (
     {posts.map((post, index) => (
       <VerticalFeatureRow
         key={post.slug}
-        title={post.title[0]}
+        title={post.title[lang]}
         description={post.description}
         // image="/assets/images/mac.png"
         image={post.coverImage}

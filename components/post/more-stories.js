@@ -2,7 +2,7 @@ import PostPreview from './post-preview'
 import { Section } from "../layout/Section";
 import { Background } from "../background/Background";
 
-export default function MoreStories({ posts }) {
+export default function MoreStories({ posts, lang }) {
   return (
     <Background color="bg-backgroundColor-white">
       
@@ -14,7 +14,7 @@ export default function MoreStories({ posts }) {
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
-            title={post.title[0]}
+            title={post.title[lang]}
             coverImage={post.coverImage}
             date={post.date}
             author={post.author}

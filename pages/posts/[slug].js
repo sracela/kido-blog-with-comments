@@ -15,7 +15,7 @@ import Form from "../../components/post/form";
 import { Section } from "../../components/layout/Section";
 import { Background } from "../../components/background/Background";
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post, morePosts, preview, lang }) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -31,11 +31,11 @@ export default function Post({ post, morePosts, preview }) {
             <div className="text-gray-900">
               <article>
                 <Head>
-                  <title>{post.title[0]}</title>
+                  <title>{post.title[lang]}</title>
                   {/* <meta property="og:image" content={post.ogImage.url} /> */}
                 </Head>
                 <PostHeader
-                  title={post.title[0]}
+                  title={post.title[lang]}
                   coverImage={post.coverImage}
                   date={post.date}
                   author={post.author}
